@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{35871E05-5A00-4317-A7E5-893AD78B696A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FGPrenotazioni</RootNamespace>
+    <AssemblyName>FGPrenotazioni</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\Company.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Filters\FilterInvoices\FilterByDate.cs" />
+    <Compile Include="Models\Filters\FilterInvoices\FilterByEmployee.cs" />
+    <Compile Include="Models\Filters\FilterInvoices\FilterByProgressiveNumber.cs" />
+    <Compile Include="Models\Filters\FilterInvoices\FilterByIdSubject.cs" />
+    <Compile Include="Models\Filters\FilterInvoices\FilterDateLess.cs" />
+    <Compile Include="Models\Filters\FilterInvoices\FilterDateMore.cs" />
+    <Compile Include="Models\Filters\FilterInvoices\FiltroBaseInvoices.cs" />
+    <Compile Include="Models\Filters\FilterInvoices\IFilterInvoices.cs" />
+    <Compile Include="Models\Filters\FilterProducts\FilterByNewProduct.cs" />
+    <Compile Include="Models\Filters\FilterProducts\FilterByCategory.cs" />
+    <Compile Include="Models\Filters\FilterProducts\FilterByBrand.cs" />
+    <Compile Include="Models\Filters\FilterProducts\FilterByKind.cs" />
+    <Compile Include="Models\Filters\FilterProducts\FilterByRentPrice.cs" />
+    <Compile Include="Models\Filters\FilterProducts\FilterBySellPrice.cs" />
+    <Compile Include="Models\Filters\FilterProducts\FilterByStatus.cs" />
+    <Compile Include="Models\Filters\FilterProducts\FiltroBaseProdotti.cs" />
+    <Compile Include="Models\Filters\FilterProducts\FiltroByCode.cs" />
+    <Compile Include="Models\Filters\FilterProducts\IFilterProducts.cs" />
+    <Compile Include="Models\Filters\FilterRent\FilterByIdCode.cs" />
+    <Compile Include="Models\Filters\FilterRent\FiltroBaseRent.cs" />
+    <Compile Include="Models\Filters\FilterRent\IFilterRent.cs" />
+    <Compile Include="Models\Filters\FilterCostumer\FilterByCF.cs" />
+    <Compile Include="Models\Filters\FilterCostumer\FilterByDenomination.cs" />
+    <Compile Include="Models\Filters\FilterCostumer\FilterByEmail.cs" />
+    <Compile Include="Models\Filters\FilterCostumer\FilterByPIVA.cs" />
+    <Compile Include="Models\Filters\FilterCostumer\FilterByReliable.cs" />
+    <Compile Include="Models\Filters\FilterCostumer\FilterByType.cs" />
+    <Compile Include="Models\Filters\FilterCostumer\FiltroBaseCostumer.cs" />
+    <Compile Include="Models\Filters\FilterCostumer\IFilterCostumer.cs" />
+    <Compile Include="Models\GoodsMovement\GoodsMovement.cs" />
+    <Compile Include="Models\GoodsMovement\Rent.cs" />
+    <Compile Include="Models\GoodsMovement\Sell.cs" />
+    <Compile Include="Models\Invoices\Invoice.cs" />
+    <Compile Include="Models\Invoices\InvoiceFactory.cs" />
+    <Compile Include="Models\Invoices\RentInvoice.cs" />
+    <Compile Include="Models\Invoices\SellInvoice.cs" />
+    <Compile Include="Models\Persistence\DatBinaryFormatter.cs" />
+    <Compile Include="Models\Persistence\XmlSerializerUtil.cs" />
+    <Compile Include="Models\Products\AudioCategoryEnum.cs" />
+    <Compile Include="Models\Products\AudioProduct.cs" />
+    <Compile Include="Models\Products\LightCategoryEnum.cs" />
+    <Compile Include="Models\Products\LightProduct.cs" />
+    <Compile Include="Models\Products\Product.cs" />
+    <Compile Include="Models\Products\VideoCategoryEnum.cs" />
+    <Compile Include="Models\Products\VideoProduct.cs" />
+    <Compile Include="Models\Riepilogue\InvoicesRiepilogue.cs" />
+    <Compile Include="Models\Riepilogue\IRiepilogue.cs" />
+    <Compile Include="Models\Riepilogue\RentRiepilogue.cs" />
+    <Compile Include="Models\Riepilogue\CustumerRiepilogue.cs" />
+    <Compile Include="Models\PrivateClient.cs" />
+    <Compile Include="Models\Services.cs" />
+    <Compile Include="Models\FGManager.cs" />
+    <Compile Include="Models\ShoppingCart.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Warehouse.cs" />
+    <Compile Include="Presenter\GestoreView.cs" />
+    <Compile Include="Presenter\HomeListPresenter.cs" />
+    <Compile Include="Presenter\InsertNewCostumerPresenter.cs" />
+    <Compile Include="Presenter\InsertNewProductPresenter.cs" />
+    <Compile Include="Presenter\LoginPresenter.cs" />
+    <Compile Include="Presenter\MainPagePresenter.cs" />
+    <Compile Include="Presenter\MostraFatturePresenter.cs" />
+    <Compile Include="Presenter\MostraNoleggiPresenter.cs" />
+    <Compile Include="Presenter\MostraSubjectFromShoppingNoloPresenter.cs" />
+    <Compile Include="Presenter\MostraSubjectFromShoppingPresenterVendita.cs" />
+    <Compile Include="Presenter\MostraSubjectPresentercs.cs" />
+    <Compile Include="Presenter\Presenter.cs" />
+    <Compile Include="Presenter\SelezionaProdottiPresenter.cs" />
+    <Compile Include="Presenter\ShoppingCartPresenter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\HomeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\HomeList.Designer.cs">
+      <DependentUpon>HomeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\InsertNewCustumer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\InsertNewCustumer.Designer.cs">
+      <DependentUpon>InsertNewCustumer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\InsertNewProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\InsertNewProductForm.Designer.cs">
+      <DependentUpon>InsertNewProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MostraFatture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\MostraFatture.Designer.cs">
+      <DependentUpon>MostraFatture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MostraNoleggi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\MostraNoleggi.Designer.cs">
+      <DependentUpon>MostraNoleggi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MostraSubAfterShoppingNolo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MostraSubAfterShoppingNolo.Designer.cs">
+      <DependentUpon>MostraSubAfterShoppingNolo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MostraSubAfterShoppingVendita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MostraSubAfterShoppingVendita.Designer.cs">
+      <DependentUpon>MostraSubAfterShoppingVendita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MostraSubject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\MostraSubject.Designer.cs">
+      <DependentUpon>MostraSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SelezionaProdotti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SelezionaProdotti.Designer.cs">
+      <DependentUpon>SelezionaProdotti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ShopppingCartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ShopppingCartForm.Designer.cs">
+      <DependentUpon>ShopppingCartForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\HomeList.resx">
+      <DependentUpon>HomeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\InsertNewCustumer.resx">
+      <DependentUpon>InsertNewCustumer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\InsertNewProductForm.resx">
+      <DependentUpon>InsertNewProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MostraFatture.resx">
+      <DependentUpon>MostraFatture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MostraNoleggi.resx">
+      <DependentUpon>MostraNoleggi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MostraSubAfterShoppingNolo.resx">
+      <DependentUpon>MostraSubAfterShoppingNolo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MostraSubAfterShoppingVendita.resx">
+      <DependentUpon>MostraSubAfterShoppingVendita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MostraSubject.resx">
+      <DependentUpon>MostraSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SelezionaProdotti.resx">
+      <DependentUpon>SelezionaProdotti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ShopppingCartForm.resx">
+      <DependentUpon>ShopppingCartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<ArrayOfProduct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Product xsi:type="AudioProduct">
+    <ProductCode>API00001</ProductCode>
+    <Description>long-range speakers</Description>
+    <SellPrice>2000</SellPrice>
+    <RentPrice>25</RentPrice>
+    <IsNew>true</IsNew>
+    <IsAvailable>false</IsAvailable>
+    <Brand>Pioneer</Brand>
+    <Category>Speakers</Category>
+  </Product>
+  <Product xsi:type="VideoProduct">
+    <ProductCode>VVI00002</ProductCode>
+    <Description>virtual monitor</Description>
+    <SellPrice>4500</SellPrice>
+    <RentPrice>50</RentPrice>
+    <IsNew>true</IsNew>
+    <IsAvailable>false</IsAvailable>
+    <Brand>VideoArm</Brand>
+    <Category>Monitor</Category>
+  </Product>
+  <Product xsi:type="AudioProduct">
+    <ProductCode>API00003</ProductCode>
+    <Description>long-range speakers</Description>
+    <SellPrice>2000</SellPrice>
+    <RentPrice>25</RentPrice>
+    <IsNew>false</IsNew>
+    <IsAvailable>false</IsAvailable>
+    <Brand>Pioneer</Brand>
+    <Category>Speakers</Category>
+  </Product>
+  <Product xsi:type="AudioProduct">
+    <ProductCode>ACO00004</ProductCode>
+    <Description>hq microphone</Description>
+    <SellPrice>100</SellPrice>
+    <RentPrice>1.5</RentPrice>
+    <IsNew>true</IsNew>
+    <IsAvailable>true</IsAvailable>
+    <Brand>CompactMic</Brand>
+    <Category>Microphones</Category>
+  </Product>
+  <Product xsi:type="AudioProduct">
+    <ProductCode>API00005</ProductCode>
+    <Description>long-range speakers</Description>
+    <SellPrice>2000</SellPrice>
+    <RentPrice>25</RentPrice>
+    <IsNew>false</IsNew>
+    <IsAvailable>false</IsAvailable>
+    <Brand>Pioneer</Brand>
+    <Category>Speakers</Category>
+  </Product>
+  <Product xsi:type="LightProduct">
+    <ProductCode>LTO00006</ProductCode>
+    <Description>strobe lights</Description>
+    <SellPrice>400</SellPrice>
+    <RentPrice>10</RentPrice>
+    <IsNew>true</IsNew>
+    <IsAvailable>true</IsAvailable>
+    <Brand>TotalLight</Brand>
+    <Category>StrobeLights</Category>
+  </Product>
+  <Product xsi:type="VideoProduct">
+    <ProductCode>VRI00007</ProductCode>
+    <Description>waterproof tarps</Description>
+    <SellPrice>10</SellPrice>
+    <RentPrice>0.5</RentPrice>
+    <IsNew>true</IsNew>
+    <IsAvailable>true</IsAvailable>
+    <Brand>RightGlass</Brand>
+    <Category>Tarpaulins</Category>
+  </Product>
+  <Product xsi:type="AudioProduct">
+    <ProductCode>API00008</ProductCode>
+    <Description>disco amplifiers</Description>
+    <SellPrice>3350</SellPrice>
+    <RentPrice>45</RentPrice>
+    <IsNew>false</IsNew>
+    <IsAvailable>false</IsAvailable>
+    <Brand>Pioneer</Brand>
+    <Category>Amplifier</Category>
+  </Product>
+  <Product xsi:type="VideoProduct">
+    <ProductCode>VVI00009</ProductCode>
+    <Description>3D beamer</Description>
+    <SellPrice>1000</SellPrice>
+    <RentPrice>20</RentPrice>
+    <IsNew>true</IsNew>
+    <IsAvailable>false</IsAvailable>
+    <Brand>VideoArm</Brand>
+    <Category>Beamer</Category>
+  </Product>
+  <Product xsi:type="AudioProduct">
+    <ProductCode>ASE00010</ProductCode>
+    <Description>long-range speakers</Description>
+    <SellPrice>2000</SellPrice>
+    <RentPrice>25</RentPrice>
+    <IsNew>true</IsNew>
+    <IsAvailable>false</IsAvailable>
+    <Brand>Sennheiser</Brand>
+    <Category>Speakers</Category>
+  </Product>
+  <Product xsi:type="VideoProduct">
+    <ProductCode>VVI00011</ProductCode>
+    <Description>virtual monitor</Description>
+    <SellPrice>4500</SellPrice>
+    <RentPrice>50</RentPrice>
+    <IsNew>true</IsNew>
+    <IsAvailable>false</IsAvailable>
+    <Brand>VideoArm</Brand>
+    <Category>Monitor</Category>
+  </Product>
+  <Product xsi:type="AudioProduct">
+    <ProductCode>AYA00012</ProductCode>
+    <Description>short-range speakers</Description>
+    <SellPrice>750</SellPrice>
+    <RentPrice>15</RentPrice>
+    <IsNew>false</IsNew>
+    <IsAvailable>true</IsAvailable>
+    <Brand>Yamaha</Brand>
+    <Category>Speakers</Category>
+  </Product>
+  <Product xsi:type="AudioProduct">
+    <ProductCode>AFU00013</ProductCode>
+    <Description>disco speakers</Description>
+    <SellPrice>8000</SellPrice>
+    <RentPrice>85.5</RentPrice>
+    <IsNew>true</IsNew>
+    <IsAvailable>true</IsAvailable>
+    <Brand>Funktion-One</Brand>
+    <Category>Speakers</Category>
+  </Product>
+  <Product xsi:type="AudioProduct">
+    <ProductCode>ASE00014</ProductCode>
+    <Description>hq amplifiers</Description>
+    <SellPrice>2000</SellPrice>
+    <RentPrice>25</RentPrice>
+    <IsNew>false</IsNew>
+    <IsAvailable>false</IsAvailable>
+    <Brand>Sennheiser</Brand>
+    <Category>Amplifier</Category>
+  </Product>
+  <Product xsi:type="LightProduct">
+    <ProductCode>LTO00015</ProductCode>
+    <Description>strobe lights</Description>
+    <SellPrice>400</SellPrice>
+    <RentPrice>10</RentPrice>
+    <IsNew>true</IsNew>
+    <IsAvailable>true</IsAvailable>
+    <Brand>TotalLight</Brand>
+    <Category>StrobeLights</Category>
+  </Product>
+  <Product xsi:type="VideoProduct">
+    <ProductCode>VRI00016</ProductCode>
+    <Description>waterproof tarps</Description>
+    <SellPrice>10</SellPrice>
+    <RentPrice>0.5</RentPrice>
+    <IsNew>true</IsNew>
+    <IsAvailable>true</IsAvailable>
+    <Brand>RightGlass</Brand>
+    <Category>Tarpaulins</Category>
+  </Product>
+  <Product xsi:type="AudioProduct">
+    <ProductCode>AZZ00017</ProductCode>
+    <Description>long-range speakers</Description>
+    <SellPrice>2000</SellPrice>
+    <RentPrice>25</RentPrice>
+    <IsNew>false</IsNew>
+    <IsAvailable>true</IsAvailable>
+    <Brand>ZZAudio</Brand>
+    <Category>Speakers</Category>
+  </Product>
+  <Product xsi:type="VideoProduct">
+    <ProductCode>VVI00018</ProductCode>
+    <Description>plexiglass monitor</Description>
+    <SellPrice>330</SellPrice>
+    <RentPrice>20.75</RentPrice>
+    <IsNew>true</IsNew>
+    <IsAvailable>false</IsAvailable>
+    <Brand>VideoArm</Brand>
+    <Category>Monitor</Category>
+  </Product>
+</ArrayOfProduct>
