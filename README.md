@@ -20,9 +20,9 @@ With FGPrenotazioni u can :
 * Have a Shopping Cart
 
 ## UML Analysis Model
-![FGPrenotazioni](http://imgur.com/a/xKsfn)
+![FGPrenotazioni](http://i.imgur.com/fTvG7rx.png)
 ## Form view
-![FGPrenotazioni](http://imgur.com/a/WWU8R)
+![FGPrenotazioni](http://i.imgur.com/agqNVPZ.png)
 
 ### THANKS 
 
